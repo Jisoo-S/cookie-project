@@ -1,0 +1,28 @@
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #fff8dc;
+  border: 2px solid #000;
+  border-radius: 8px;
+  font-family: 'Irish Grover', cursive;
+  font-size: 0.85em;       /* 🔽 더 작게 */
+  padding: 4px 10px;       /* 🔽 여백 축소 */
+  cursor: pointer;
+  z-index: 10;             /* ✅ 항상 클릭 가능하게 위로 올림 */
+}
+
+.footer-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;   /* ✅ 가로 가운데 정렬 */
+  margin-top: 30px;
+}
+
+.site-footer {
+  font-family: system-ui, sans-serif;
+  font-size: 0.9em;
+  color: #666;
+  margin: 0;
+}
+

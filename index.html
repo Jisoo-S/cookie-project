@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>&lt;How Was Your Day?></title>
+  <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #fff8dc;
+      font-family: 'Irish Grover', cursive;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      background-color: white;
+      max-width: 700px;
+      width: 100%;
+      min-height: 100vh;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 4%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #000;
+      font-size: 3em;
+      font-weight: bold;
+      text-align: center;
+      white-space: nowrap;
+    }
+    .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background-color: #fff8dc;
+        border: 2px solid #000;
+        border-radius: 8px;
+        font-family: 'Irish Grover', cursive;
+        font-size: 0.85em;       /* 🔽 더 작게 */
+        padding: 4px 10px;       /* 🔽 여백 축소 */
+        cursor: pointer;
+        z-index: 10;             /* ✅ 항상 클릭 가능하게 위로 올림 */
+        }
+
+    .footer-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .site-footer {
+      font-family: system-ui, sans-serif;
+      font-size: 0.9em;
+      color: #666;
+      margin: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-wrapper">
+      <!-- 👇 글씨가 위에 올라감 -->
+    <div class="overlay-text">&lt;How Was Your Day?></div>
+
+    <img src="images/cookietotal.png" usemap="#cookiemap" alt="Cookie Emotions" />
+
+    <map name="cookiemap">
+        <!-- 예: happy 쿠키 영역 (좌표는 대략적인 예시입니다) -->
+        <area shape="rect" coords="144,196,251,336" href="pages/happy.html" alt="happy">
+        <area shape="rect" coords="260,197,367,339" href="pages/anger.html" alt="anger">
+        <area shape="rect" coords="375,197,477,340" href="pages/fear.html" alt="fear">
+        <area shape="rect" coords="139,343,255,477" href="pages/surprise.html" alt="surprise">
+        <area shape="rect" coords="260,347,364,471" href="pages/love.html" alt="love">
+        <area shape="rect" coords="371,346,478,471" href="pages/sadness.html" alt="sadness">
+        <area shape="rect" coords="143,484,254,614" href="pages/joy.html" alt="joy">
+        <area shape="rect" coords="259,485,366,614" href="pages/sleepy.html" alt="sleepy">
+        <area shape="rect" coords="373,486,479,614" href="pages/hungry.html" alt="hungry">
+        
+      </map>
+    </div>
+    <div class="footer-wrapper">
+    <p class="site-footer">ⓒ 2025. Created by Jisoo Shin</p>
+  </div>
+  </div>
+</body>
+</html>
